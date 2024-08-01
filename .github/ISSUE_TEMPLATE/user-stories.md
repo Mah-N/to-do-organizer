@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-As a **role** I can **capability** so that **received benefit**
+**As a** type of user, **I want** goal **so that** reason/benefit.
 
 ## Acceptance Criteria:
 - Acceptance criteria 1
