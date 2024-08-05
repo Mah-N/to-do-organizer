@@ -22,6 +22,11 @@ class TaskCreateView(CreateView):
     template_name = 'task_form.html'
     success_url = reverse_lazy('task_list')
 
+
+    def form_valid(self, form):
+        form.instance.user = self.request.user
+        return super().form_valid(form)
+
 class TaskDetailView(DetailView):
     model = Task
     template_name = 'task_detail.html'
