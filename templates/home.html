@@ -1,15 +1,51 @@
-{% load static %}
+{% extends "base.html" %}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Django-Setup</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}" >
- </head>
- <body>
-     <h1>If this heading is red static files are being served</h1>
+{% block title %}Home{% endblock %}
 
- </body>
- </html
+{% block content %}
+  <div class="jumbotron text-center">
+    <h1 class="display-4">Welcome to To-Do List App</h1>
+    <p class="lead">Manage your tasks efficiently and stay organized.</p>
+    <hr class="my-4">
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <h2>Sign In</h2>
+      <form method="POST" action="{% url 'account_login' %}">
+        {% csrf_token %}
+        <div class="form-group">
+          <label for="id_login">Email:</label>
+          <input type="email" name="login" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="id_password">Password:</label>
+          <input type="password" name="password" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Sign In</button>
+      </form>
+    </div>
+    <div class="col-md-6">
+      <h2>Register</h2>
+      <form method="POST" action="{% url 'account_signup' %}">
+        {% csrf_token %}
+        <div class="form-group">
+          <label for="id_username">Username:</label>
+          <input type="text" name="username" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="id_email">Email:</label>
+          <input type="email" name="email" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="id_password1">Password:</label>
+          <input type="password" name="password1" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="id_password2">Confirm Password:</label>
+          <input type="password" name="password2" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Register</button>
+      </form>
+    </div>
+  </div>
+{% endblock %}
