@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Task Detail{% endblock %}
+
+{% block content %}
+  <h2>Task Detail</h2>
+  <div>
+    <strong>Title:</strong> {{ task.title }}
+  </div>
+  <div>
+    <strong>Description:</strong> {{ task.description }}
+  </div>
+  <div>
+    <strong>Due Date:</strong> {{ task.due_date }}
+  </div>
+  <div>
+    <strong>Priority:</strong> {{ task.get_priority_display }}
+  </div>
+  <div>
+    <strong>Status:</strong> {{ task.get_status_display }}
+  </div>
+  <a href="{% url 'task_edit' task.pk %}">Edit</a>
+  <a href="{% url 'task_delete' task.pk %}">Delete</a>
+  <a href="{% url 'task_list' %}">Back to Task List</a>
+{% endblock %}
