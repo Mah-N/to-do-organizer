@@ -29,7 +29,7 @@ class TaskCreateView(CreateView):
 
 class TaskDetailView(DetailView):
     model = Task
-    template_name = 'task_detail.html'
+    template_name = 'taskdetail.html'
     context_object_name = 'task'
 
 class TaskUpdateView(UpdateView):
