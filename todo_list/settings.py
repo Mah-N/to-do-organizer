@@ -110,7 +110,7 @@ WSGI_APPLICATION = 'todo_list.wsgi.application'
 #}
 
 DATABASES = {
-    'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+    'default': dj_database_url.parse(os.environ.get("DATABASE_URL", "postgres://u3veubo54py:K4HjLniQLCQU@ep-gentle-mountain-a23bxz6h-pooler.eu-central-1.aws.neon.tech/pager_hunk_duo_335993"))
 }
 
 
