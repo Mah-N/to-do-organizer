@@ -1,3 +1,4 @@
+from django.contrib import messages
 from django.shortcuts import render, redirect
 from django.views.generic import TemplateView, ListView, CreateView, DetailView, UpdateView, DeleteView
 from django.urls import reverse_lazy
@@ -25,6 +26,7 @@ class TaskCreateView(CreateView):
 
     def form_valid(self, form):
         form.instance.user = self.request.user
+        messages.success(self.request, 'Task created successfully!')
         return super().form_valid(form)
 
 class TaskDetailView(DetailView):
