@@ -4,11 +4,23 @@
 {% block title %}Delete Task{% endblock %}
 
 {% block content %}
+
+  <!-- Heading for the delete task -->
   <h2>Delete Task</h2>
+
+  <!-- Confirmation message for deleting the task -->
   <p>Are you sure you want to delete the task "{{ object.title }}"?</p>
+
+  <!-- Form to confirm deletion of the task -->
   <form method="post">
+
+    <!-- CSRF token for security -->
     {% csrf_token %}
+
+    <!-- Submit button to confirm deletion -->
     <button type="submit">Confirm Delete</button>
+
+    <!-- Link to cancel deletion and go back to the task list -->
     <a href="{% url 'task_list' %}">Cancel</a>
   </form>
 {% endblock %}

@@ -33,9 +33,17 @@
             
         <!-- Display the task's description -->
         <td>{{ task.description }}</td>
+
+        <!-- Display the task's due date -->
         <td>{{ task.due_date }}</td>
+
+        <!-- Display the task's priority -->
         <td>{{ task.get_priority_display }}</td>
+
+        <!-- Display the task's status -->
         <td>{{ task.get_status_display }}</td>
+
+        <!-- Links to view, edit, and delete the task -->
         <td>
           <a href="{% url 'task_detail' task.pk %}">View</a>
           <a href="{% url 'task_edit' task.pk %}">Edit</a>

@@ -4,11 +4,21 @@
 {% block title %}Add Task{% endblock %}
 
 {% block content %}
+
+  <!-- Heading for the add task page -->
   <h2>Add New Task</h2>
+
+  <!-- Form to add a new task -->
   <form method="post">
+
+    <!-- CSRF token for security -->
     {% csrf_token %}
+
+    <!-- Render the form fields as paragraphs -->
     {{ form.as_p }}
     <button type="submit">Save</button>
   </form>
+
+  <!-- Link to go back to the task list -->
   <a href="{% url 'task_list' %}">Back to Task List</a>
 {% endblock %}
