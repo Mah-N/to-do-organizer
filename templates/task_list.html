@@ -4,7 +4,11 @@
 {% block title %}Task List{% endblock %}
 
 {% block content %}
+
+  <!-- Heading for the task list page -->
   <h2>Task List</h2>
+
+  <!-- Table to display the list of tasks -->
   <table>
     <thead>
       <tr>
@@ -17,9 +21,17 @@
       </tr>
     </thead>
     <tbody>
+
+      <!-- Loop through the tasks and display each one in a table row -->
       {% for task in tasks %}
       <tr>
-        <td>{{ task.title }}</td>
+
+        <!-- Display the task's title -->
+        <td>{{ task.title }}
+          
+        </td>
+            
+        <!-- Display the task's description -->
         <td>{{ task.description }}</td>
         <td>{{ task.due_date }}</td>
         <td>{{ task.get_priority_display }}</td>

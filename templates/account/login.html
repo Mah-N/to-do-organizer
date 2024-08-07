@@ -5,10 +5,19 @@
 
 {% block content %}
 <div class="container mt-4">
+    <!-- Header for the Sign In form -->
     <h2>Sign In</h2>
+
+    <!-- Begin form to handle user login -->
     <form method="POST" action="{% url 'account_login' %}">
+        
+        <!-- CSRF token for security purposes -->
         {% csrf_token %}
+
+        <!-- Render the login form fields -->
         {{ form.as_p }}
+
+        <!-- Submit button with Bootstrap primary button styling -->
         <button type="submit" class="btn btn-primary">Sign In</button>
     </form>
 </div>

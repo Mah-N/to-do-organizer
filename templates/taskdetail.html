@@ -4,23 +4,38 @@
 {% block title %}Task Detail{% endblock %}
 
 {% block content %}
+
+  <!-- Heading for the task detail page -->
   <h2>Task Detail</h2>
+
+  <!-- Display the task's title -->
   <div>
     <strong>Title:</strong> {{ task.title }}
   </div>
+
+  <!-- Display the task's description -->
   <div>
     <strong>Description:</strong> {{ task.description }}
   </div>
+
+  <!-- Display the task's due date -->
   <div>
     <strong>Due Date:</strong> {{ task.due_date }}
   </div>
+
+  <!-- Display the task's priority, using get_priority_display -->
   <div>
     <strong>Priority:</strong> {{ task.get_priority_display }}
   </div>
+
+  <!-- Display the task's status, using get_status_display -->
   <div>
     <strong>Status:</strong> {{ task.get_status_display }}
   </div>
+
+  <!-- Links to edit, delete the task and go back to the task list -->
   <a href="{% url 'task_edit' task.pk %}">Edit</a>
   <a href="{% url 'task_delete' task.pk %}">Delete</a>
   <a href="{% url 'task_list' %}">Back to Task List</a>
+
 {% endblock %}
