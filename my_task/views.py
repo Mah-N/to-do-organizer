@@ -20,12 +20,14 @@ class HomePage(TemplateView):
 
 # Create your views here.
 class TaskListView(LoginRequiredMixin, ListView):
-    ""
-    View to display the list of tasks
-    """ 
+    
     model = Task
     template_name = 'task_list.html'
     context_object_name = 'tasks'
+
+    def get_queryset(self):
+        # Filter tasks to only include those created by the logged-in user
+        return Task.objects.filter(user=self.request.user)
 
 class TaskCreateView(LoginRequiredMixin, CreateView):
     model = Task
@@ -40,11 +42,13 @@ class TaskCreateView(LoginRequiredMixin, CreateView):
         return super().form_valid(form)
 
 class TaskDetailView(LoginRequiredMixin, DetailView):
+    
     model = Task
     template_name = 'taskdetail.html'
     context_object_name = 'task'
 
 class TaskUpdateView(LoginRequiredMixin, UpdateView):
+    
     model = Task
     form_class = TaskForm
     template_name = 'task_form.html'
@@ -56,6 +60,7 @@ class TaskUpdateView(LoginRequiredMixin, UpdateView):
         return super().form_valid(form)
 
 class TaskDeleteView(LoginRequiredMixin, DeleteView):
+    
     model = Task
     template_name = 'task_delete.html'
     success_url = reverse_lazy('task_list')
