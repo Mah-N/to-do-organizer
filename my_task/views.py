@@ -5,6 +5,7 @@ from django.views.generic import TemplateView, ListView, CreateView, DetailView,
 from django.urls import reverse_lazy
 from .models import Task
 from .forms import TaskForm
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 class HomePage(TemplateView):
     """
@@ -12,13 +13,21 @@ class HomePage(TemplateView):
     """
     template_name = 'home.html'
 
+    def get(self, request, *args, **kwargs):
+        if request.user.is_authenticated:
+            return redirect('task_list')  # Redirect to task list if user is authenticated
+        return super().get(request, *args, **kwargs)
+
 # Create your views here.
-class TaskListView(ListView):
+class TaskListView(LoginRequiredMixin, ListView):
+    ""
+    View to display the list of tasks
+    """ 
     model = Task
     template_name = 'task_list.html'
     context_object_name = 'tasks'
 
-class TaskCreateView(CreateView):
+class TaskCreateView(LoginRequiredMixin, CreateView):
     model = Task
     form_class = TaskForm
     template_name = 'task_form.html'
@@ -30,12 +39,12 @@ class TaskCreateView(CreateView):
         messages.success(self.request, 'Task created successfully!')
         return super().form_valid(form)
 
-class TaskDetailView(DetailView):
+class TaskDetailView(LoginRequiredMixin, DetailView):
     model = Task
     template_name = 'taskdetail.html'
     context_object_name = 'task'
 
-class TaskUpdateView(UpdateView):
+class TaskUpdateView(LoginRequiredMixin, UpdateView):
     model = Task
     form_class = TaskForm
     template_name = 'task_form.html'
@@ -46,7 +55,7 @@ class TaskUpdateView(UpdateView):
         messages.success(self.request, 'Task updated successfully!')
         return super().form_valid(form)
 
-class TaskDeleteView(DeleteView):
+class TaskDeleteView(LoginRequiredMixin, DeleteView):
     model = Task
     template_name = 'task_delete.html'
     success_url = reverse_lazy('task_list')
