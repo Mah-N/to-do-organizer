@@ -40,7 +40,7 @@ class TaskUpdateView(UpdateView):
     form_class = TaskForm
     template_name = 'task_form.html'
     success_url = reverse_lazy('task_list')
-    
+
 
     def form_valid(self, form):
         messages.success(self.request, 'Task updated successfully!')
@@ -51,6 +51,11 @@ class TaskDeleteView(DeleteView):
     template_name = 'task_delete.html'
     success_url = reverse_lazy('task_list')
 
-    # def delete(self, request, *args, **kwargs):
-     #   messages.success(self.request, 'Task deleted successfully!')
-      #  return super().delete(request, *args, **kwargs)    
+
+    def delete(self, request, *args, **kwargs):
+        messages.success(self.request, 'Task deleted successfully!')
+        return super().delete(request, *args, **kwargs)
+
+    
+
+
