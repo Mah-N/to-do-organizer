@@ -36,13 +36,20 @@ h1 {
 /* Footer should always be at the bottom */
 .footer {
     margin-top: auto;
-    background-color: #f8f9fa; /* Light background color to match the navbar */
+    background-color: #343a40 !important; /* Light background color to match the navbar */
     padding: 10px 0; /* Padding to give some space inside the footer */
+    color: #ffffff !important; /* White text color */
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center the text */
+    
 }
 
 .footer .text-muted {
-    color: #6c757d; /* Muted text color for the footer text */
-}
+    color: #ffffff !important; 
+    font-weight: bold; /* Make text bold */
+    /* text-align: center;  Center the text */
+}    
+
 
 /* Navbar Custom Styles */
 nav.navbar {
