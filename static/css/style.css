@@ -47,16 +47,23 @@ h1 {
 /* Navbar Custom Styles */
 nav.navbar {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow */
-    background-color: #343a40;
+    background-color: #343a40 !important;
+}
+
+.navbar-brand {
+    color: #ffffff !important; /* Change color to white */
+    font-weight: bold; /* Make text bold */
 }
 
 .nav-link {
     padding: 10px 15px;
-    color: #007bff !important; /* Bootstrap primary color */
+    color: #ffffff !important; /* Bootstrap primary color */
+    font-weight: bold; /* Make text bold */
 }
 
 .nav-link:hover {
     background-color: #e2e6ea;  /* Light background on hover */
+    color: #343a40 !important; /* Darker color on hover */
     border-radius: 5px;
 }
 
