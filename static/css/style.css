@@ -1,7 +1,19 @@
 /* General styling */
 body {
-   /* background-color: #f0f0f0; */
+    background-color: #f0f0f0;
     font-family: Arial, sans-serif;
+}
+
+/* Ensure the HTML and body take up the full height */
+html, body {
+    height: 100%;
+}
+
+/* Content wrapper to push the footer to the bottom */
+.content-wrapper {
+    min-height: calc(100vh - 56px); /* Subtracting the height of the navbar */
+    display: flex;
+    flex-direction: column;
 }
 
 /* Heading styling */
@@ -20,3 +32,16 @@ h1 {
 .close {
     outline: none;
 }
+
+/* Footer should always be at the bottom */
+.footer {
+    margin-top: auto;
+    background-color: #f8f9fa; /* Light background color to match the navbar */
+    padding: 10px 0; /* Padding to give some space inside the footer */
+}
+
+.footer .text-muted {
+    color: #6c757d; /* Muted text color for the footer text */
+}
+
+
