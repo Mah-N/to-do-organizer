@@ -44,4 +44,26 @@ h1 {
     color: #6c757d; /* Muted text color for the footer text */
 }
 
+/* Navbar Custom Styles */
+nav.navbar {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow */
+    background-color: #343a40;
+}
+
+.nav-link {
+    padding: 10px 15px;
+    color: #007bff !important; /* Bootstrap primary color */
+}
+
+.nav-link:hover {
+    background-color: #e2e6ea;  /* Light background on hover */
+    border-radius: 5px;
+}
+
+.nav-link.active {
+    color: #fff; /* White text for active link */
+    background-color: #007bff; /* Slightly darker than the light background */
+    border-radius: 5px;
+}
+
 
