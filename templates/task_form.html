@@ -16,9 +16,9 @@
 
     <!-- Render the form fields as paragraphs -->
     {{ form.as_p }}
-    <button type="submit">Save</button>
+    <button type="submit" class="btn btn-primary">Save</button>
   </form>
 
   <!-- Link to go back to the task list -->
-  <a href="{% url 'task_list' %}">Back to Task List</a>
+  <a href="{% url 'task_list' %}" class="btn btn-warning btn-sm"><strong>Back to Task List</strong></a>
 {% endblock %}
