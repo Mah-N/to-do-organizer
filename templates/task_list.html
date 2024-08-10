@@ -14,8 +14,11 @@
   <!-- Check if there are any tasks to display -->
   {% if tasks %}
 
-  <!-- Table to display the list of tasks -->
-  <table class="table table-striped table-hover">
+  <!-- Wrapper for responsive table -->
+  <div class="table-responsive">
+
+    <!-- Table to display the list of tasks -->
+    <table class="table table-striped table-hover">
     <thead class="thead-dark">
       <tr>
         <th>Title</th>
@@ -33,32 +36,33 @@
       <tr>
 
         <!-- Display the task's title -->
-        <td>{{ task.title }}
-          
-        </td>
+        <td data-label="Title">{{ task.title }}</td>
             
         <!-- Display the task's description -->
-        <td>{{ task.description }}</td>
+        <td data-label="Description">{{ task.description }}</td>
 
         <!-- Display the task's due date -->
-        <td>{{ task.due_date }}</td>
+        <td data-label="Due Date">{{ task.due_date }}</td>
 
         <!-- Display the task's priority -->
-        <td>{{ task.get_priority_display }}</td>
+        <td data-label="Priority">{{ task.get_priority_display }}</td>
 
         <!-- Display the task's status -->
-        <td>{{ task.get_status_display }}</td>
+        <td data-label="Status">{{ task.get_status_display }}</td>
+        <td data-label="Actions">
 
         <!-- Links to view, edit, and delete the task -->
-        <td>
-          <a href="{% url 'task_detail' task.pk %}" class="btn btn-info btn-sm">View</a>
+          <div class="btn-group">
+          <a href="{% url 'task_detail' task.pk %}" class="btn btn-info btn-sm">view</a>
           <a href="{% url 'task_edit' task.pk %}" class="btn btn-warning btn-sm">Edit</a>
           <a href="{% url 'task_delete' task.pk %}" class="btn btn-danger btn-sm">Delete</a>
+        </div>
         </td>
       </tr>
       {% endfor %}
     </tbody>
   </table>
+</div> <!-- End of table-responsive -->
 
   {% else %}
   <!-- Message and link for users with no tasks -->

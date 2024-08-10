@@ -113,3 +113,48 @@ nav.navbar {
 .navbar-toggler-icon::after {
     top: 8px; /* Position the bottom line */
 }
+
+
+
+/* Responsive adjustments for horizontal scrolling on smaller screens */
+@media (max-width: 768px) {
+    /* Make the table scrollable horizontally */
+    .table-responsive {
+        overflow-x: auto;
+        display: block;
+        -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+        border: 1px solid #ddd; /* Add a subtle border around the table */
+    }
+
+    /* Improve the visibility of the scrollbar */
+    .table-responsive::-webkit-scrollbar {
+        height: 12px;
+    }
+
+    .table-responsive::-webkit-scrollbar-thumb {
+        background-color: #343a40; /* Match the scrollbar thumb color to the navbar */
+        border-radius: 10px;
+    }
+
+    .table-responsive::-webkit-scrollbar-track {
+        background-color: #f0f0f0;
+    }
+
+    /* Ensure action buttons are full-width */
+    .btn-group .btn {
+        display: block;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    /* Ensure action buttons are stacked */
+    .btn-group {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    /* Add padding to table cells for better readability on smaller screens */
+    table tbody tr td {
+        padding: 10px 5px;
+    }
+}
