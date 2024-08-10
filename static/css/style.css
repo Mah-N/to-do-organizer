@@ -114,6 +114,15 @@ nav.navbar {
     top: 8px; /* Position the bottom line */
 }
 
+/* Custom spacing for action buttons in the task list */
+.btn-group .btn {
+    margin-right: 5px; /* Adjust the spacing as needed */
+}
+
+.btn-group .btn:last-child {
+    margin-right: 0; /* No margin for the last button */
+}
+
 
 
 /* Responsive adjustments for horizontal scrolling on smaller screens */
