@@ -18,9 +18,9 @@
     {% csrf_token %}
 
     <!-- Submit button to confirm deletion -->
-    <button type="submit">Confirm Delete</button>
+    <button type="submit" class="btn btn-danger">Confirm Delete</button>
 
     <!-- Link to cancel deletion and go back to the task list -->
-    <a href="{% url 'task_list' %}">Cancel</a>
+    <a href="{% url 'task_list' %}" class="btn btn-secondary">Cancel</a>
   </form>
 {% endblock %}

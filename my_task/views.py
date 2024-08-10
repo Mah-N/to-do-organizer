@@ -7,6 +7,7 @@ from .models import Task
 from .forms import TaskForm
 from django.contrib.auth.mixins import LoginRequiredMixin
 
+
 class HomePage(TemplateView):
     """
     Displays home page"
@@ -60,15 +61,10 @@ class TaskUpdateView(LoginRequiredMixin, UpdateView):
         return super().form_valid(form)
 
 class TaskDeleteView(LoginRequiredMixin, DeleteView):
-    
     model = Task
     template_name = 'task_delete.html'
     success_url = reverse_lazy('task_list')
 
-
     def delete(self, request, *args, **kwargs):
         messages.success(self.request, 'Task deleted successfully!')
         return super().delete(request, *args, **kwargs)
-
-
-
