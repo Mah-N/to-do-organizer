@@ -34,8 +34,11 @@
   </div>
 
   <!-- Links to edit, delete the task and go back to the task list -->
-  <a href="{% url 'task_edit' task.pk %}">Edit</a>
-  <a href="{% url 'task_delete' task.pk %}">Delete</a>
-  <a href="{% url 'task_list' %}">Back to Task List</a>
+  <div class="mt-4"> 
+    <a href="{% url 'task_edit' task.pk %}" class="btn btn-warning btn-sm">Edit</a>
+    <a href="{% url 'task_delete' task.pk %}" class="btn btn-danger btn-sm">Delete</a>
+    <a href="{% url 'task_list' %}" class="btn btn-secondary btn-sm">Back to Task List</a>
+
+  </div> 
 
 {% endblock %}
