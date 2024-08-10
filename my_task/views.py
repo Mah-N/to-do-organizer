@@ -70,6 +70,5 @@ class TaskDeleteView(LoginRequiredMixin, DeleteView):
         messages.success(self.request, 'Task deleted successfully!')
         return super().delete(request, *args, **kwargs)
 
-    
 
 

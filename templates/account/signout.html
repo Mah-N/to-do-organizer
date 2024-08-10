@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Sign Out{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <!-- Header for the sign-out confirmation -->
+    <h2>Sign Out</h2>
+    <p>Are you sure you want to sign out?</p>
+
+    <!-- Begin form to handle user sign-out -->
+    <form method="POST" action="{% url 'account_logout' %}">
+        <!-- CSRF token for security purposes -->
+        {% csrf_token %}
+
+        <!-- Submit button for sign-out -->
+        <button type="submit" class="btn btn-danger">Sign Out</button>
+    </form>
+
+    <!-- Link to cancel and go back to the home page -->
+    <a href="{% url 'home' %}" class="btn btn-secondary mt-2">Cancel</a>
+</div>
+{% endblock %}
