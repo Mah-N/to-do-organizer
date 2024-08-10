@@ -14,3 +14,15 @@ Welcome to to-do app.
 
 
 ## User Experience (UX)
+
+## Features
+
+## Design
+
+## Technologies Used
+
+## Testing
+
+## Deployment
+
+## Credits
