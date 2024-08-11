@@ -32,7 +32,20 @@ As a user, I want to:
 ## Design
 
 ## Technologies Used
-
+- ### Languages
+   -  HTML5
+   -  CSS3
+   -  Python
+   -  Django
+   -  Postgres Database
+ 
+- ### Libraries and Programs Used:
+   -  Visual Studio code for development.
+   -  GitHub is used for setting up and managing project repositories.
+   -  A GitHub Project Board are utilized for effectively managing tasks, tracking project progress, and ensuring efficient implementation.
+   -  Balsamiq is used for designing wireframes to visualize project layouts.
+   -  Bootstrap and custom CSS are used to create visually appealing and responsive website, customized to meet specific project needs.
+ 
 ## Testing
 
 ## Deployment
