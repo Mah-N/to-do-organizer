@@ -19,6 +19,21 @@
     color: #333;
 }
 
+/* Hero Section Styling */
+.hero-section {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px; /* Add padding around the image */
+    background-color: #ffffff;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 800px; /* Limit the max width for larger screens */
+    height: auto;
+    border-radius: 10px;
+}
+
 
 
 /* General styling */
