@@ -34,6 +34,16 @@
     border-radius: 10px;
 }
 
+/* Section styling for How It Works */
+.how-it-works {
+    padding: 40px 20px;
+    background-color: #ffffff;
+    text-align: center;
+    margin-top: 0; /* Remove unnecessary margin */
+}
+
+
+
 
 
 /* General styling */
