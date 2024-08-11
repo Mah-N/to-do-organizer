@@ -1,3 +1,26 @@
+/* Content wrapper to push the footer to the bottom */
+.content-wrapper {
+    min-height: 100vh; /* Ensure full height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Welcome Section Styling */
+.welcome-section {
+    text-align: center;
+    padding: 60px 20px 0; /* Add padding to the top and sides */
+    background-color: #ffffff;
+}
+
+.welcome-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+}
+
+
+
 /* General styling */
 body {
     background-color: #f0f0f0;
