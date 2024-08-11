@@ -29,6 +29,13 @@ As a user, I want to:
 
 ## Features
 
+### Future Features
+Features which could be implemented in the future:
+ * Task sharing and collaboration.
+ * Task reminders and notifications.
+ * Task filtering and catagorization.
+ * User feedback
+
 ## Design
 
 ## Technologies Used
