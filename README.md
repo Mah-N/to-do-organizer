@@ -13,7 +13,12 @@ Welcome to to-do app.
 * [Credits](#credits)
 
 
-## User Experience (UX)
+## User Experience /User Stories (UX)
+
+- ### As a user, I want to:
+
+* See the navigation bar contain clear and descriptive menu items that represent different actions that may be performed my on my page.
+* Register with my email and a password, so that I can create a secure account that will store my tasks and keep my data private.
 
 ## Features
 
