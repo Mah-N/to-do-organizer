@@ -4,17 +4,23 @@
 {% block title %}Home{% endblock %}
 
 {% block content %}
-
-  <!-- Jumbotron for displaying a welcome message -->
-  <div class="jumbotron text-center">
-
-    <!-- Main heading for the home page -->
-    <h1 class="display-4">Welcome to To-Do List App</h1>
-
-    <!-- Subheading/lead text for the home page -->
-    <p class="lead">Manage your tasks efficiently and stay organized.</p>
-
-    <!-- Horizontal rule to create a separation line -->
-    <hr class="my-4">
+<div class="content-wrapper">
+  <!-- Welcome Message -->
+  <div class="welcome-section">
+      <h1>Welcome to To-Do List App</h1>
   </div>
+
+  <!-- Hero Image Section -->
+  <div class="hero-section">
+      <div class="hero-image">
+          <img src="{% static 'images/Hero Image_Home.jpg' %}" alt="Hero Image">
+      </div>
+  </div>
+
+  <!-- How It Works Section -->
+  <div class="how-it-works">
+      <h2>How It Works</h2>
+      <p>Our To-Do List App helps you stay on top of your tasks, ensuring you never miss a deadline.</p>
+  </div>
+</div>
 {% endblock %}

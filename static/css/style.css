@@ -2,6 +2,33 @@
 body {
     background-color: #f0f0f0;
     font-family: Arial, sans-serif;
+    margin: 0; 
+    padding: 0; 
+}
+
+html, body {
+    height: 100%;
+}
+
+.content-wrapper {
+    min-height: calc(100vh - 56px); /* Adjust for full height */
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    margin-top: auto;
+    background-color: #343a40 !important;
+    padding: 10px 0;
+    color: #ffffff !important;
+    text-align: center;
+}
+
+
+/* General styling */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
 }
 
 /* Ensure the HTML and body take up the full height */
