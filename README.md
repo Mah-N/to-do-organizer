@@ -15,10 +15,17 @@ Welcome to to-do app.
 
 ## User Experience /User Stories (UX)
 
-- ### As a user, I want to:
+As a user, I want to:
 
 * See the navigation bar contain clear and descriptive menu items that represent different actions that may be performed my on my page.
 * Register with my email and a password, so that I can create a secure account that will store my tasks and keep my data private.
+* Create a new to-do task by entering details such as the task title, description, due date, and priority level (low, medium, high), so that I can organize my activities effectively.
+* View a list of all my tasks, so I can manage my workload and prioritize my tasks.
+* Click to view detailed information of a task including title, description, Date Due, status, Edit buttons and delete buttons.
+* Edit an existing task to update its details, such as changing the due date or priority, so that I can adjust to changes and keep my task list accurate.
+* Be able to delete a tasks that are no longer needed or have been completed, so that I can keep my task list organized and relevant.
+* The To-Do List application to be responsive, adjusting its layout and content to fit the screen size of the device I am using, whether it's a desktop, tablet, or smartphone, ensuring an optimal user experience.
+* Experience a consistent layout and design across all pages of the website, including the navigation bar's position, styling, and behavior.
 
 ## Features
 
