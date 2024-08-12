@@ -6,6 +6,7 @@ from django.urls import reverse_lazy
 from .models import Task
 from .forms import TaskForm
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.messages.views import SuccessMessageMixin
 
 
 class HomePage(TemplateView):
@@ -60,12 +61,22 @@ class TaskUpdateView(LoginRequiredMixin, UpdateView):
         messages.success(self.request, 'Task updated successfully!')
         return super().form_valid(form)
 
-class TaskDeleteView(LoginRequiredMixin, DeleteView):
+# class TaskDeleteView(LoginRequiredMixin, DeleteView):
+#     model = Task
+#     template_name = 'task_delete.html'
+#     success_url = reverse_lazy('task_list')
+
+#     def delete(self, request, *args, **kwargs):
+#         messages.success(self.request, 'Task deleted successfully!')
+#         return super().delete(request, *args, **kwargs)
+
+class TaskDeleteView(LoginRequiredMixin, SuccessMessageMixin, DeleteView):
     model = Task
     template_name = 'task_delete.html'
     success_url = reverse_lazy('task_list')
+    success_message = "Task deleted successfully!"
 
     def delete(self, request, *args, **kwargs):
-        messages.success(self.request, 'Task deleted successfully!')
-        return super().delete(request, *args, **kwargs)
-
+        response = super().delete(request, *args, **kwargs)
+        messages.success(self.request, self.success_message)
+        return response
