@@ -54,6 +54,18 @@ The sign-in page is straightforward, featuring fields for entering the username 
 
 The registration page includes fields for the username, email, and password, ensuring a seamless onboarding process for new users. The layout is clean, with a focus on usability, guiding users smoothly through the registration process.
 
+### Agile Development
+
+For the development of To-Do List app, I adopted an Agile methodology to ensure iterative and efficient progress throughout the project lifecycle. Central to this approach was the utilization of a Kanban board hosted on GitHub Projects. You can view the project board [here](https://github.com/users/Mah-N/projects/2/views/1)
+
+#### Kanban Board Overview
+I used GitHub project board to develop my site. The project board follows Agile methodology, providing a visual representation of the task management process. The board is updated regularly to reflect the current status of tasks, ensuring that the project progresses smoothly. 
+* **Todo**: This section contains tasks that are yet to be started.
+* **In Progress**: Work in progress was tracked here, indicating tasks actively being worked on
+* **Done**: Tasks that were completed successfully were moved to this column.
+
+![Project Board](documentations/New_kanban_board.png)
+
 
 ## Technologies Used
 - ### Languages
