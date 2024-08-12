@@ -1,9 +1,9 @@
-/* Content wrapper to push the footer to the bottom */
-.content-wrapper {
+/* Content wrapper specific to the home page */
+.home-page-wrapper {
     min-height: 100vh; /* Ensure full height */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between; /* Home-specific alignment */
 }
 
 /* Welcome Section Styling */
