@@ -13,7 +13,7 @@ Welcome to to-do app.
 * [Credits](#credits)
 
 
-## User Experience /User Stories (UX)
+## User Experience /User Stories
 
 As a user, I want to:
 
@@ -37,6 +37,23 @@ Features which could be implemented in the future:
  * User feedback
 
 ## Design
+### Wireframe
+I used Balsamiq to create my wireframes. These low-fidelity wireframes were created to map out the user interface for the To-Do List application. The design prioritizes simplicity and ease of navigation.
+### Home Page
+![Home Page Wireframe](documentations/Wireframe_home.png)
+
+
+The home page provides a welcoming message at the top, followed by a prominent area dedicated to showcasing the hero image, giving users an immediate visual context of the app’s purpose. The navigation bar at the top ensures users can easily access essential links such as "Home," "Sign In," and "Register."
+
+### Sign-In Page
+![Sign-In Page Wireframe](documentations/Wireframe_signIn.png)
+
+The sign-in page is straightforward, featuring fields for entering the username and password. The navigation bar remains accessible at the top for easy redirection to other sections, while the form is designed for quick access and ease of use.
+### Register Page
+![Register Page Wireframe](documentations/Register_wireframe.png)
+
+The registration page includes fields for the username, email, and password, ensuring a seamless onboarding process for new users. The layout is clean, with a focus on usability, guiding users smoothly through the registration process.
+
 
 ## Technologies Used
 - ### Languages
