@@ -40,7 +40,7 @@ Features which could be implemented in the future:
 ### Wireframe
 I used Balsamiq to create my wireframes. These low-fidelity wireframes were created to map out the user interface for the To-Do List application. The design prioritizes simplicity and ease of navigation.
 ### Home Page
-![Home Page Wireframe](documentations/Wireframe_home.png)
+![Home Page Wireframe](documentations/Home_new_wireframe.png)
 
 
 The home page provides a welcoming message at the top, followed by a prominent area dedicated to showcasing the hero image, giving users an immediate visual context of the app’s purpose. The navigation bar at the top ensures users can easily access essential links such as "Home," "Sign In," and "Register."
