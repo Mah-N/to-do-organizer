@@ -1,7 +1,6 @@
 from django.contrib import messages
 from django.shortcuts import render, redirect
 from django.views.generic import TemplateView, ListView, CreateView, DetailView, UpdateView, DeleteView
-# from django.contrib.messages.views import SuccessMessageMixin
 from django.urls import reverse_lazy
 from .models import Task
 from .forms import TaskForm
@@ -60,15 +59,6 @@ class TaskUpdateView(LoginRequiredMixin, UpdateView):
     def form_valid(self, form):
         messages.success(self.request, 'Task updated successfully!')
         return super().form_valid(form)
-
-# class TaskDeleteView(LoginRequiredMixin, DeleteView):
-#     model = Task
-#     template_name = 'task_delete.html'
-#     success_url = reverse_lazy('task_list')
-
-#     def delete(self, request, *args, **kwargs):
-#         messages.success(self.request, 'Task deleted successfully!')
-#         return super().delete(request, *args, **kwargs)
 
 class TaskDeleteView(LoginRequiredMixin, SuccessMessageMixin, DeleteView):
     model = Task
