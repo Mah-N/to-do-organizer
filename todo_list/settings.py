@@ -39,7 +39,7 @@ CSRF_TRUSTED_ORIGINS = [
 ]
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['8000-mahn-todoorganizer-fqmlgm3guvk.ws.codeinstitute-ide.net','my-todo-list-final-project-45103fba3130.herokuapp.com','.herokuapp.com']
 

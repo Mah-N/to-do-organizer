@@ -255,3 +255,16 @@ nav.navbar {
         padding: 10px 5px;
     }
 }
+
+/* Specific styling for task forms */
+.task-form-wrapper form input[type="text"],
+.task-form-wrapper form textarea,
+.task-form-wrapper form select {
+    width: 100%; 
+    margin-bottom: 15px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+}
+
+
