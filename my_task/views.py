@@ -6,6 +6,15 @@ from .models import Task
 from .forms import TaskForm
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.messages.views import SuccessMessageMixin
+from django.contrib.auth.mixins import AccessMixin
+
+class CustomLoginRequiredMixin(LoginRequiredMixin, AccessMixin):
+    """ Custom mixin to add a message when user is not logged in. """
+
+    def handle_no_permission(self):
+        messages.error(self.request, "You are not logged in. Please log in to continue.")
+        return redirect('account_login')
+
 
 
 class HomePage(TemplateView):
@@ -20,7 +29,7 @@ class HomePage(TemplateView):
         return super().get(request, *args, **kwargs)
 
 # Create your views here.
-class TaskListView(LoginRequiredMixin, ListView):
+class TaskListView(CustomLoginRequiredMixin, ListView):
     
     model = Task
     template_name = 'task_list.html'
@@ -30,7 +39,7 @@ class TaskListView(LoginRequiredMixin, ListView):
         # Filter tasks to only include those created by the logged-in user
         return Task.objects.filter(user=self.request.user)
 
-class TaskCreateView(LoginRequiredMixin, CreateView):
+class TaskCreateView(CustomLoginRequiredMixin, CreateView):
     model = Task
     form_class = TaskForm
     template_name = 'task_form.html'
@@ -42,13 +51,13 @@ class TaskCreateView(LoginRequiredMixin, CreateView):
         messages.success(self.request, 'Task created successfully!')
         return super().form_valid(form)
 
-class TaskDetailView(LoginRequiredMixin, DetailView):
+class TaskDetailView(CustomLoginRequiredMixin, DetailView):
     
     model = Task
     template_name = 'taskdetail.html'
     context_object_name = 'task'
 
-class TaskUpdateView(LoginRequiredMixin, UpdateView):
+class TaskUpdateView(CustomLoginRequiredMixin, UpdateView):
     
     model = Task
     form_class = TaskForm
@@ -60,7 +69,7 @@ class TaskUpdateView(LoginRequiredMixin, UpdateView):
         messages.success(self.request, 'Task updated successfully!')
         return super().form_valid(form)
 
-class TaskDeleteView(LoginRequiredMixin, SuccessMessageMixin, DeleteView):
+class TaskDeleteView(CustomLoginRequiredMixin, SuccessMessageMixin, DeleteView):
     model = Task
     template_name = 'task_delete.html'
     success_url = reverse_lazy('task_list')
