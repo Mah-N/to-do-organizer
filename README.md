@@ -87,6 +87,12 @@ I used GitHub project board to develop my site. The project board follows Agile 
    -  Bootstrap and custom CSS are used to create visually appealing and responsive website, customized to meet specific project needs.
  
 ## Testing
+* I used the [W3 HTML Validator](https://validator.w3.org/) to check the HTML on each of my site pages.
+* I used the [W3 CSS Validator](https://jigsaw.w3.org/css-validator/) to check my CSS script by Direct Input. I found no errors! There are 4 warnigns which are just flagging vendor extensions.
+  
+  ![CSS Validator](documentations/CSS_Validator.png)
+
+## Manual Testing Results
 
 ## Deployment
 To deploy this application to Heroku the following steps were taken:
