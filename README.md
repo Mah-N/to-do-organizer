@@ -93,6 +93,52 @@ I used GitHub project board to develop my site. The project board follows Agile 
   ![CSS Validator](documentations/CSS_Validator.png)
 
 ## Manual Testing Results
+### Home Page
+| Test     | Result      |
+|----------|-------------|
+| Home:       | Pass        |
+| Sign In: It redirect to sign In page  | Pass        |
+| Register:It redirect to register page | Pass        |
+
+### Task List Page
+
+| Test | Pass    |
+|----------|-------------|
+| To access this required login    | Pass      |
+|Add Task: It redirects to add task page    | Pass      |
+|View Task: It redirects to view page    | Pass     |
+|Edit Task: It redirects to edit the task   | Pass     |
+|Delete Task: It redirects to confirm delete page |   Pass   |
+
+### Login Page
+
+| Test | Result    |
+|----------|-------------|
+| Secure signup functionality   | Pass     |
+| Redirect after successful login    | Pass      |
+
+### Registration Page
+
+| Test | Result    |
+|----------|-------------|
+|Secure login functionality    | Pass      |
+| Redirect after successful registration    | Pass     |
+
+
+### Logout Page
+
+| Test | Result   |
+|----------|-------------|
+| Logout functionality   | Pass      |
+| Redirect after successful logout    |Pass      |
+
+### Security
+
+| Test | Result   |
+|----------|-------------|
+| Prevention of brute force actions via URL   | Pass      |
+| Redirect to sign-in page after attempted unauthorized action	    |Pass      |
+
 
 ## Deployment
 To deploy this application to Heroku the following steps were taken:
