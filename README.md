@@ -139,6 +139,7 @@ I used GitHub project board to develop my site. The project board follows Agile 
 | Prevention of brute force actions via URL   | Pass      |
 | Redirect to sign-in page after attempted unauthorized action	    |Pass      |
 
+![Security](documentations/Unauthorized_login.png)
 
 ## Deployment
 To deploy this application to Heroku the following steps were taken:
