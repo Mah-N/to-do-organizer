@@ -42,6 +42,15 @@
     margin-top: 0; /* Remove unnecessary margin */
 }
 
+.custom-font {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300; /* Light font weight */
+    font-size: 1.25rem;
+    color: #333;
+    letter-spacing: 0.5px; /* Add slight spacing between letters */
+}
+
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .hero-section {

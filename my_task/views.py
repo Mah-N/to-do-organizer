@@ -16,7 +16,6 @@ class CustomLoginRequiredMixin(LoginRequiredMixin, AccessMixin):
         return redirect('account_login')
 
 
-
 class HomePage(TemplateView):
     """
     Displays home page"
