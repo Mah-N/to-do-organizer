@@ -73,20 +73,41 @@ I used GitHub project board to develop my site. The project board follows Agile 
 
 ## Technologies Used
 - ### Languages
-   -  HTML5
-   -  CSS3
-   -  Python
-   -  Django
-   -  Postgres Database
+   -  HTML5- for page structure
+   -  CSS3- for custom styling
+   -  Python- for the backend
+   -  Django- framework used to build this project
+   -  Postgres Database- used as the database
+   -  Google Fonts- for custom font styling
+   -  Heroku - for hosting and deployement of this project
+   -  Cloudinary - hosting the static files
+   -  Pexels - for free stock images
  
 - ### Libraries and Programs Used:
-   -  Visual Studio code for development.
+   -  Git - for version control.
    -  GitHub is used for setting up and managing project repositories.
    -  A GitHub Project Board are utilized for effectively managing tasks, tracking project progress, and ensuring efficient implementation.
    -  Balsamiq is used for designing wireframes to visualize project layouts.
    -  Bootstrap and custom CSS are used to create visually appealing and responsive website, customized to meet specific project needs.
  
-## Testing
+## Testing and Validation
+
+### Responsiveness
+I used the dev tools on chrome to test the website for responsiveness. I captured screenshots to demonstrate responsive design across mobile, tablet and laptop based on the size configurations preset in dev tools.
+
+### Home Page
+* Laptop
+![Laptop View](documentations/Laptop_View.png)
+
+* Tablet
+
+![Tablet view](documentations/Tablet_view.png)
+
+* Mobile
+
+![Mobile View](documentations/Mobile_view.png)
+
+
 * I used the [W3 HTML Validator](https://validator.w3.org/) to check the HTML on each of my site pages.
 
 ![HTML Validator](documentations/HTML_Validator.png)
@@ -145,7 +166,7 @@ I used GitHub project board to develop my site. The project board follows Agile 
 ![Security](documentations/Unauthorized_login.png)
 
 ## Deployment
-To deploy this application to Heroku the following steps were taken:
+To deploy the To-Do List application to Heroku the following steps were taken:
 
  1. **Create a New Repository**:
       - Set up a new repository.
