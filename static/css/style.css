@@ -275,4 +275,9 @@ nav.navbar {
     border-radius: 4px; 
 }
 
+/* Additional style for text areas in the task form */
+.task-form-wrapper form textarea {
+    min-height: 150px; /* Give the textarea a bit more height */
+    resize: vertical; /* Allow vertical resizing */
+}
 
