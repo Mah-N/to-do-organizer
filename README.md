@@ -1,6 +1,10 @@
-# to-do-organizer
-Welcome to to-do app.
+# To-Do-List App
 
+## Welcome to To-Do List App.
+
+View live project here: https://my-todo-list-final-project-45103fba3130.herokuapp.com/
+
+The tool you can rely on to manage your daily tasks and schedules. Create an account, sign in, and start organizing your day by creating, editing, and tracking your tasks effortlessly. With the To-Do List App, staying on top of your to-do list has never been easier!
 
 
 ## Index - Table of Contents
@@ -117,3 +121,11 @@ To deploy this application to Heroku the following steps were taken:
 ## Credits
 
 -  Code Institute LMS
+-  [Task Manager](https://github.com/enocol/Task-Manager)
+-  https://github.com/Gordon-Meade/thebearadirectoryblog
+-  https://github.com/katiejanecoughlan/sojourn-scribbles-V3
+-  [Hero Image](https://www.pexels.com/photo/woman-in-gray-coat-using-white-laptop-computer-4065891/)
+-  [Youtube Tutorial](https://www.youtube.com/watch?v=PgDKQqvUn8U&list=PL8Loxdz4U5rqhjG3xAeE5SAmeeJJ5zQY0&index=1)
+-  [ChatGPT](https://chatgpt.com/)
+-  [W3 Schools](https://www.w3schools.com/)
+  
