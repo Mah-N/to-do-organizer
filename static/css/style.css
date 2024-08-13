@@ -267,4 +267,12 @@ nav.navbar {
     box-sizing: border-box; 
 }
 
+/* Styling for the Save and Back buttons in the task form */
+.task-form-wrapper form button[type="submit"],
+.task-form-wrapper a.btn {
+    padding: 10px 20px; 
+    margin-top: 10px; 
+    border-radius: 4px; 
+}
+
 
