@@ -88,6 +88,9 @@ I used GitHub project board to develop my site. The project board follows Agile 
  
 ## Testing
 * I used the [W3 HTML Validator](https://validator.w3.org/) to check the HTML on each of my site pages.
+
+![HTML Validator](documentations/HTML_Validator.png)
+  
 * I used the [W3 CSS Validator](https://jigsaw.w3.org/css-validator/) to check my CSS script by Direct Input. I found no errors! There are 4 warnigns which are just flagging vendor extensions.
   
   ![CSS Validator](documentations/CSS_Validator.png)
