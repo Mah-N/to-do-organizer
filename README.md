@@ -6,7 +6,6 @@ View live project here: https://my-todo-list-final-project-45103fba3130.herokuap
 
 The tool you can rely on to manage your daily tasks and schedules. Create an account, sign in, and start organizing your day by creating, editing, and tracking your tasks effortlessly. With the To-Do List App, staying on top of your to-do list has never been easier!
 
-
 ## Index - Table of Contents
 * [User Experience (UX) ](#user-experience-ux)
 * [Features](#features)
@@ -223,6 +222,8 @@ To deploy the To-Do List application to Heroku the following steps were taken:
         
  8.  **Launch the Application**:
      - After deployment launch the app directly from the Heroku dashboard.
+
+[Back to Top](#to-do-list-app)
 ## Chrome Browser Alert Issue
 ![Chrome_Issue](documentations/chrome_Error.png)
 
@@ -242,3 +243,4 @@ This issue has been reported and should resolve itself in the coming days, as pe
 -  [ChatGPT](https://chatgpt.com/)
 -  [W3 Schools](https://www.w3schools.com/)
   
+[Back to Top](#to-do-list-app)
