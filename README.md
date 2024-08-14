@@ -114,9 +114,13 @@ I used GitHub project board to develop my site. The project board follows Agile 
 
 ![Project Board](documentations/New_kanban_board.png)
 
-## Technologies Used
+### Future Featues
 
-- ### Languages
+**Task reminders and notification, Task filtering, Task catagorization**: These are features that are not essential for the current version but could be implemented in the future based on the project's needs or user feedback. They represent optional enhancements that may improve the user experience or add additional functionality.
+
+**Task Sharing & Collaboration**: Certain features have been designated as "Won't Have" based on current project priorities and constraints. These features are not planned for development and will only be reconsidered if project goals and resources change significantly.
+
+## Technologies Stack
 
   - HTML5- for page structure
   - CSS3- for custom styling
@@ -127,8 +131,6 @@ I used GitHub project board to develop my site. The project board follows Agile 
   - Heroku - for hosting and deployement of this project
   - Cloudinary - hosting the static files
   - Pexels - for free stock images
-
-- ### Libraries and Programs Used:
   - Git - for version control.
   - GitHub is used for setting up and managing project repositories.
   - A GitHub Project Board are utilized for effectively managing tasks, tracking project progress, and ensuring efficient implementation.
