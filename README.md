@@ -144,6 +144,10 @@ I used the dev tools on chrome to test the website for responsiveness. I capture
   
   ![CSS Validator](documentations/CSS_Validator.png)
 
+* I used the [CI Python Linter](https://pep8ci.herokuapp.com/) to check all my python scripts. I found few errors like the below - mostly lines were too long or there was a missing blank space line. I have left some of the error messages as they are related to a too long line at the result of a comment. 
+
+![Python Validator](documentations/Python_Validator.png)
+
 ## Manual Testing Results
 ### Home Page
 | Test     | Result      |
