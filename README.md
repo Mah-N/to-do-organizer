@@ -6,6 +6,8 @@ View live project here: https://my-todo-list-final-project-45103fba3130.herokuap
 
 The tool you can rely on to manage your daily tasks and schedules. Create an account, sign in, and start organizing your day by creating, editing, and tracking your tasks effortlessly. With the To-Do List App, staying on top of your to-do list has never been easier!
 
+![Responsive Image](documentations/Responsive_Home.png)
+
 ## Index - Table of Contents
 
 - [User Experience (UX) ](#user-experience-ux)
