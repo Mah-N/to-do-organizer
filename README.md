@@ -138,7 +138,7 @@ I used the dev tools on chrome to test the website for responsiveness. I capture
 
 * I used the [W3 HTML Validator](https://validator.w3.org/) to check the HTML on each of my site pages.
 
-![HTML Validator](documentations/HTML_Validator.png)
+![HTML Validator]
   
 * I used the [W3 CSS Validator](https://jigsaw.w3.org/css-validator/) to check my CSS script by Direct Input. I found no errors! There are 4 warnigns which are just flagging vendor extensions.
   
