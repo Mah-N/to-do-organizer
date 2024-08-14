@@ -14,13 +14,17 @@ STATUS_CHOICES = [
 ]
 
 # Create your models here.
+
+
 class Task(models.Model):
     title = models.CharField(max_length=200)
     description = models.TextField()
     due_date = models.DateTimeField()
     priority = models.CharField(max_length=6, choices=PRIORITY_CHOICES)
-    status = models.CharField(max_length=10, choices=STATUS_CHOICES, default='pending')
-    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="tasks")
+    status = models.CharField(
+        max_length=10, choices=STATUS_CHOICES, default='pending')
+    user = models.ForeignKey(
+        User, on_delete=models.CASCADE, related_name="tasks")
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
