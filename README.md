@@ -32,6 +32,35 @@ As a user, I want to:
 * Experience a consistent layout and design across all pages of the website, including the navigation bar's position, styling, and behavior.
 
 ## Features
+### Navigation Bar:
+* Home: Directs users to the home page to introduce the user to app.
+* User Registration and Sign-In Page: Allows users to create an account or sign in if already registered
+![Nav Bar](documentations/Nav_bar.png)
+
+### Task List:
+
+* Comprehensive details of Title, status, priority
+* Functional buttons (edit, delete) empowering users to manage Task according to their needs.
+
+![Task List](documentations/Task_list.png)
+
+### Alert Messages: 
+* Alert message will pop up to confirm if the user signed in or out . Also when a task is added, edited or delete.
+
+![Alert Message](documentations/Alert_message.png)
+
+### Login:
+* The login page has 2 clear options, username and password.
+
+![Login](documentations/Sign_In_Form.png)
+
+### Register:
+* It offers users space for a First Name, Last Name, username, email(optional), password and then rechecks the password to ensure it matches and there were no errors.
+![Register](documentations/Register_form.png)
+
+### Add Task:
+* It asks to complete fields like : Title, Description, Date due and priority
+![Add Task](documentations/Task_form.png)
 
 ### Future Features
 Features which could be implemented in the future:
