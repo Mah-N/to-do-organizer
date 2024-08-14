@@ -262,7 +262,7 @@ If you encounter the warning shown in the screenshot below, you can safely bypas
 
 This issue has been reported and should resolve itself in the coming days, as per advice from the tutor assistant. Please be assured that the site is safe and fully operational when accessed through other browsers.
 
-## Credits
+## Credits and Acknowledgements
 
 - Code Institute LMS
 - [Task Manager](https://github.com/enocol/Task-Manager)
