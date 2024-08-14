@@ -223,7 +223,14 @@ To deploy the To-Do List application to Heroku the following steps were taken:
         
  8.  **Launch the Application**:
      - After deployment launch the app directly from the Heroku dashboard.
+## Chrome Browser Alert Issue
+![Chrome_Issue](documentations/chrome_Error.png)
 
+Please note that the deployed project link is currently being flagged as a dangerous site in Google Chrome. This appears to be a false positive triggered by Chrome's security policies, as the site functions perfectly in other browsers like Microsoft Edge, Firefox, etc.
+
+If you encounter the warning shown in the screenshot below, you can safely bypass it by clicking on the highlighted area labeled "Only visit this unsafe site." This will allow you to access the project as intended.
+
+This issue has been reported and should resolve itself in the coming days, as per advice from the tutor assistant. Please be assured that the site is safe and fully operational when accessed through other browsers.
 ## Credits
 
 -  Code Institute LMS
